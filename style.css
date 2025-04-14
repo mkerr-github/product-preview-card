@@ -1,0 +1,99 @@
+/********************* Global Variables **********************/
+
+:root {
+    --white: hsl(0, 0%, 100%);
+}
+
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+
+/* .fraunces-<uniquifier> {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+} */
+
+/********************** Test & Debug *************************/
+
+/* * {
+    outline: 1px solid green;
+    background-color: hsl(155, 68%, 71%);
+} */
+
+/********************* Standard Resets ***********************/
+
+
+*,
+*::before,
+*::after {
+    /* Ensures padding & border remain within element's size */
+    box-sizing: border-box;
+}
+
+* {
+    /* Remove browser's default margin, padding, and font settings */
+    margin: 0;
+    padding: 0;
+    /* Ensures forms, buttons, etc., match the document font */
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    /* Prevents inline spacing issues */
+    display: block;
+    /* Ensures media scales within parent container */
+    max-width: 100%;
+}
+
+/*************************************************************/
+
+body {
+display: grid;
+place-content: center;
+min-height: calc(100vh - 1px);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    margin-top: 2rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/************************ Responsive *************************/
+
+/* Tablet & Desktop Layout (min-width: 992px) */
+@media (min-width: 600px) {
+
+.product-card {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+

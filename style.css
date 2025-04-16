@@ -133,6 +133,7 @@ h1 {
 }
 
 footer {
+    margin-top: 1rem;
     position: fixed;
     bottom: 1rem;
     left: 0;

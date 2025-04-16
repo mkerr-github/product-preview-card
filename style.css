@@ -42,17 +42,6 @@
     color: var(--grey);
 }
 
-
-/********************** Test & Debug *************************/
-
-/* * {
-    outline: 1px solid green;
-    background-color: hsl(155, 68%, 71%);
-} */
-
-/********************* Standard Resets ***********************/
-
-
 *,
 *::before,
 *::after {
@@ -144,7 +133,11 @@ h1 {
 }
 
 footer {
-    margin-top: 2rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .attribution {
@@ -169,7 +162,7 @@ footer {
 
 /************************ Responsive *************************/
 
-/* Tablet & Desktop Layout (min-width: 992px) */
+/* Tablet & Desktop Layout */
 @media (min-width: 600px) {
 
     .product-card {

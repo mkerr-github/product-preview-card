@@ -16,23 +16,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
   <main>
     <article class="product-card">
-      <picture class="product-image"><img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
+      <picture class="product-image">
+        <source media="(min-width: 600px)" srcset="./images/image-product-desktop.jpg">
+        <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
       </picture>
       <section class="product-info">
-        <p class="category">Perfume</p>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
-          Perfumer-Creator for the House of CHANEL.</p>
-        <p>$149.99
-          <s>$169.99</s>
-        </p>
-        <button>Add to Cart</button>
+        <div class="product-text">
+          <p class="category text-preset-4">Perfume</p>
+          <h1 class="text-preset-1">Gabrielle Essence Eau De Parfum</h1>
+          <p class="description text-preset-3">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
+        </div>
+        <p class="price"><span class="current-price text-preset-1">$149.99</span><s
+            class="old-price text-preset-5">$169.99</s></p>
+        <button class="cart-button"><img src="./images/icon-cart.svg" alt="Add to Cart"><span class="text-preset-2">Add
+            to Cart</span></button>
       </section>
     </article>
   </main>
@@ -40,8 +43,9 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://www.frontendmentor.io/profile/mkerr-github">M Kerr</a>..
+      Coded by <a href="https://www.frontendmentor.io/profile/mkerr-github">M Kerr.</a>
     </div>
   </footer>
 </body>
+
 </html>
